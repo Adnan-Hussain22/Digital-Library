@@ -1,0 +1,2 @@
+# Digital-Library
+Digital Library is a desktop application where entries of library based works can be done on Wizards. It is customized management system where the owner of library can customized according to their own needs. The system can be used stand alone or can be integrated with institutions. Records of librarian, members and books, venders are stored in a database which can be manipulated in several ways like CREATE, UPDATE, DELETE, SEARCH etc.
