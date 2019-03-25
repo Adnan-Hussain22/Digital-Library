@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Lib
+namespace Digital Library.Lib
 {
     class Supplier:Database_Connection
     {

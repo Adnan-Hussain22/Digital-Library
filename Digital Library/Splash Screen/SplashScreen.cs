@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_School_Manangement_System.Customization;
+using Digital Library.Customization;
 
-namespace Advanced_School_Manangement_System.Splash_Screen
+namespace Digital Library.Splash_Screen
 {
     public partial class SplashScreen : Form
     {

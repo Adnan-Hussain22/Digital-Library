@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_School_Manangement_System;
-using Advanced_School_Manangement_System.Lib;
+using Digital Library;
+using Digital Library.Lib;
 namespace Login_Win
 {
     public partial class FrmLogin : Form
@@ -25,7 +25,7 @@ namespace Login_Win
 
         private void ButtonSignin_Click(object sender, EventArgs e)
         {
-            Advanced_School_Manangement_System.Lib.User_Info Lib = new Advanced_School_Manangement_System.Lib.User_Info();
+            Digital Library.Lib.User_Info Lib = new Digital Library.Lib.User_Info();
             Lib.MainId = TextboxUserid.text;
             Lib.Password= TextboxPassword.text;
             var check= Lib.Login();

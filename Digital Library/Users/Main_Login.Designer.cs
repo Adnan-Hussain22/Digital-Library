@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Mangement_System__Main.Login
+﻿namespace Digital Library__Main.Login
 {
     partial class Main_Login
     {
@@ -79,15 +79,15 @@
             this.btnAdmin_Select = new System.Windows.Forms.Panel();
             this.lblAdmin_Select = new System.Windows.Forms.Label();
             this.picbxAdmin_Select = new System.Windows.Forms.PictureBox();
-            this.picbxPage2Admin = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxAvatarPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxRetypeCheckPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxPasswordCheckPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxEmailCheckPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxAvatarCheckPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxAdminCheckPage3_Signup = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxPage2SignInPasswordCheck = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
-            this.picbxPage2SignInEmailCheck = new Advanced_School_Manangement_System.Customization.CustomPictureBox();
+            this.picbxPage2Admin = new Digital Library.Customization.CustomPictureBox();
+            this.picbxAvatarPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxRetypeCheckPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxPasswordCheckPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxEmailCheckPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxAvatarCheckPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxAdminCheckPage3_Signup = new Digital Library.Customization.CustomPictureBox();
+            this.picbxPage2SignInPasswordCheck = new Digital Library.Customization.CustomPictureBox();
+            this.picbxPage2SignInEmailCheck = new Digital Library.Customization.CustomPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picbxPage2SignInMail)).BeginInit();
             this.pnlPageSignup_Librarian.SuspendLayout();
             this.pnlPage3_Signup_Admin.SuspendLayout();
@@ -956,15 +956,15 @@
         private System.Windows.Forms.Panel btnAdmin_Select;
         private System.Windows.Forms.Label lblAdmin_Select;
         private System.Windows.Forms.PictureBox picbxAdmin_Select;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxAvatarPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxRetypeCheckPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxPasswordCheckPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxEmailCheckPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxAvatarCheckPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxAdminCheckPage3_Signup;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxPage2Admin;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxPage2SignInPasswordCheck;
-        private Advanced_School_Manangement_System.Customization.CustomPictureBox picbxPage2SignInEmailCheck;
+        private Digital Library.Customization.CustomPictureBox picbxAvatarPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxRetypeCheckPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxPasswordCheckPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxEmailCheckPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxAvatarCheckPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxAdminCheckPage3_Signup;
+        private Digital Library.Customization.CustomPictureBox picbxPage2Admin;
+        private Digital Library.Customization.CustomPictureBox picbxPage2SignInPasswordCheck;
+        private Digital Library.Customization.CustomPictureBox picbxPage2SignInEmailCheck;
 
     }
 

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_School_Manangement_System.Splash_Screen;
-using Advanced_School_Mangement_System__Main.Login;
+using Digital Library.Splash_Screen;
+using Digital Library.Login;
 
-namespace Advanced_School_Manangement_System
+namespace Digital Library
 {
     static class Program
     {

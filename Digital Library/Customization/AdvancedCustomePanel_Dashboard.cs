@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Customization
+namespace Digital Library.Customization
 {
     public partial class AdvancedCustomePanel_Dashboard : UserControl
     {

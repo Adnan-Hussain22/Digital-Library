@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System.Settings
+﻿namespace Digital Library.Settings
 {
     partial class Master_Settings
     {

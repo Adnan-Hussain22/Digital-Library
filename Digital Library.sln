@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced School Manangement System", "Advanced School Manangement System\Advanced School Manangement System.csproj", "{A49A1D2F-F306-4DA5-9242-8603AC70D7D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digital Library", "Digital Library\Digital Library.csproj", "{A49A1D2F-F306-4DA5-9242-8603AC70D7D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

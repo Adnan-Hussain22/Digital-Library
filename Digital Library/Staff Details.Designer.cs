@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System
+﻿namespace Digital Library
 {
     partial class Dummy3
     {

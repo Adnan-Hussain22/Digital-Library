@@ -8,10 +8,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_School_Manangement_System.Customization;
-using Advanced_School_Manangement_System;
+using Digital Library.Customization;
+using Digital Library;
 
-namespace Advanced_School_Mangement_System__Main.Login
+namespace Digital Library__Main.Login
 {
     public partial class Main_Login : Form
     {
@@ -140,7 +140,7 @@ namespace Advanced_School_Mangement_System__Main.Login
         {            
             pnlPage2Admin.Visible = false;
             AdminSlider.Enabled = true;
-            Advanced_School_Manangement_System.Global.LibrarianType = "Admin";
+            Digital Library.Global.LibrarianType = "Admin";
         }
 
         private void AdminSlider_Tick(object sender, EventArgs e)
@@ -233,7 +233,7 @@ namespace Advanced_School_Mangement_System__Main.Login
         private void btnLibrarian_Click(object sender, EventArgs e)
         {
             lblPage2Admin.Text = "LIBRARIAN";
-            Advanced_School_Manangement_System.Global.LibrarianType = "Librarian";
+            Digital Library.Global.LibrarianType = "Librarian";
             btnPage1Login_Click(sender, e);
         }
 
@@ -297,21 +297,21 @@ namespace Advanced_School_Mangement_System__Main.Login
             Application.Restart();
         }
 
-        public event EventHandler<Advanced_School_Manangement_System.Lib.ActionDataEventArgs> NewActionData;
+        public event EventHandler<Digital Library.Lib.ActionDataEventArgs> NewActionData;
         private void btnPage2SignInEnter_Click(object sender, EventArgs e)
         {
             //lblPage2Admin
             if (lblPage2Admin.Text == "Admin")
             {
-                Advanced_School_Manangement_System.Global.LibrarianType = "Admin";
+                Digital Library.Global.LibrarianType = "Admin";
             }
             else
             {
-                Advanced_School_Manangement_System.Global.LibrarianType = "Librarian";
+                Digital Library.Global.LibrarianType = "Librarian";
             }
             if (txtbxPage2SignInMail.Text.Trim() != "" && txtbxPage2SignInPassword.Text.Trim() != "")
             {
-                Advanced_School_Manangement_System.Lib.User_Info u = new Advanced_School_Manangement_System.Lib.User_Info();
+                Digital Library.Lib.User_Info u = new Digital Library.Lib.User_Info();
                 u.MainId = txtbxPage2SignInMail.Text.Trim();
                 u.Password = txtbxPage2SignInPassword.Text.Trim();
                 u.UserType = lblPage2Admin.Text.Trim();
@@ -334,7 +334,7 @@ namespace Advanced_School_Mangement_System__Main.Login
                             }
                             else
                             {
-                                Pic = Advanced_School_Manangement_System.Properties.Resources.default_man;
+                                Pic = Digital Library.Properties.Resources.default_man;
                             }
                             OnNewActionData(Pic, Type, Id, Name);
                         }
@@ -345,7 +345,7 @@ namespace Advanced_School_Mangement_System__Main.Login
                 }
                 else
                 {
-                    MessageBox.Show("Incorrect username and password", Advanced_School_Manangement_System.Global.CaptionLib, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Incorrect username and password", Digital Library.Global.CaptionLib, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
             }
@@ -356,7 +356,7 @@ namespace Advanced_School_Mangement_System__Main.Login
             var handler = NewActionData;
             if (handler != null)
             {
-                handler(this, new Advanced_School_Manangement_System.Lib.ActionDataEventArgs() { Picture = img, LibID = LibId, LibType = LibType, LibName = LibName });
+                handler(this, new Digital Library.Lib.ActionDataEventArgs() { Picture = img, LibID = LibId, LibType = LibType, LibName = LibName });
             }
         }
     }

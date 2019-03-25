@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Settings
+namespace Digital Library.Settings
 {
     public partial class Master_Settings : UserControl
     {

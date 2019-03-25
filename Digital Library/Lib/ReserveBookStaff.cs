@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace Advanced_School_Manangement_System.Lib
+namespace Digital Library.Lib
 {
     class ReserveBookStaff:Lib.IssueBookMember
     {

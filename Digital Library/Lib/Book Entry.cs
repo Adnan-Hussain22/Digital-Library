@@ -9,7 +9,7 @@ using System.IO;
 using System.Data.SqlClient;
 using System.Drawing;
 
-namespace Advanced_School_Manangement_System.Lib
+namespace Digital Library.Lib
 {
     class Book_Entry : Lib.Editor
     {

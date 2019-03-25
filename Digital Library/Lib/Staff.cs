@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace Advanced_School_Manangement_System.Lib
+namespace Digital Library.Lib
 {
     class Staff:Lib.MemberInfo
     {

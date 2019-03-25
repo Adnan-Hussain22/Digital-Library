@@ -12,7 +12,7 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Reuseables
+namespace Digital Library.Reuseables
 {
     public partial class QR_Scanner : UserControl
     {

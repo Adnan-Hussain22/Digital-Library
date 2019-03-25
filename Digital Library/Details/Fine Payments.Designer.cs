@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System.Details
+﻿namespace Digital Library.Details
 {
     partial class Fine_Payments
     {

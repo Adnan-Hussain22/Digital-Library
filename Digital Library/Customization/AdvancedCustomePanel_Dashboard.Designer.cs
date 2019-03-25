@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System.Customization
+﻿namespace Digital Library.Customization
 {
     partial class AdvancedCustomePanel_Dashboard
     {

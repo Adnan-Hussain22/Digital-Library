@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System
+﻿namespace Digital Library
 {
     partial class ReturnBooks
     {
@@ -365,7 +365,7 @@
             // 
             // picbox_memberimage
             // 
-            this.picbox_memberimage.BackgroundImage = global::Advanced_School_Manangement_System.Properties.Resources.photo_camera__1_;
+            this.picbox_memberimage.BackgroundImage = global::Digital Library.Properties.Resources.photo_camera__1_;
             this.picbox_memberimage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picbox_memberimage.Location = new System.Drawing.Point(552, 201);
             this.picbox_memberimage.Name = "picbox_memberimage";
@@ -492,7 +492,7 @@
             // 
             // picbox_bookimage
             // 
-            this.picbox_bookimage.BackgroundImage = global::Advanced_School_Manangement_System.Properties.Resources.photo_camera__1_;
+            this.picbox_bookimage.BackgroundImage = global::Digital Library.Properties.Resources.photo_camera__1_;
             this.picbox_bookimage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picbox_bookimage.Location = new System.Drawing.Point(654, 49);
             this.picbox_bookimage.Name = "picbox_bookimage";
@@ -503,7 +503,7 @@
             // 
             // picbox_barcode
             // 
-            this.picbox_barcode.BackgroundImage = global::Advanced_School_Manangement_System.Properties.Resources.photo_camera__1_;
+            this.picbox_barcode.BackgroundImage = global::Digital Library.Properties.Resources.photo_camera__1_;
             this.picbox_barcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picbox_barcode.Location = new System.Drawing.Point(450, 49);
             this.picbox_barcode.Name = "picbox_barcode";

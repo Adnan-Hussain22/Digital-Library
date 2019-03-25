@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Customization
+namespace Digital Library.Customization
 {
     class CustomeMenuStrip : ProfessionalColorTable
     {

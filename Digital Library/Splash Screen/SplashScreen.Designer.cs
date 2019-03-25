@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System.Splash_Screen
+﻿namespace Digital Library.Splash_Screen
 {
     partial class SplashScreen
     {

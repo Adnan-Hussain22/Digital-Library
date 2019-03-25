@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System.Reuseables
+﻿namespace Digital Library.Reuseables
 {
     partial class Reusable_Container
     {

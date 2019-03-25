@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Advanced_School_Manangement_System.Properties {
+namespace Digital Library.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

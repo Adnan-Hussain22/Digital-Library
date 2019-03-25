@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System
+﻿namespace Digital Library
 {
     partial class Dashboard
     {
@@ -102,16 +102,16 @@
             this.btnLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSettings = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlBookCiculation_BooksDue = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlBookCiculation_Returned = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlKeyInfo_Available = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlBookCiculation_AllIssued = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlKeyInfo_AllBooks = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlMiscellaneous_Category = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlMiscellaneous_Suppliers = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlMiscellaneous_TotalFine = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlMiscellaneous_Publishers = new Advanced_School_Manangement_System.CustomPanelDashboard();
-            this.pnlKeyInfo_Members = new Advanced_School_Manangement_System.CustomPanelDashboard();
+            this.pnlBookCiculation_BooksDue = new Digital Library.CustomPanelDashboard();
+            this.pnlBookCiculation_Returned = new Digital Library.CustomPanelDashboard();
+            this.pnlKeyInfo_Available = new Digital Library.CustomPanelDashboard();
+            this.pnlBookCiculation_AllIssued = new Digital Library.CustomPanelDashboard();
+            this.pnlKeyInfo_AllBooks = new Digital Library.CustomPanelDashboard();
+            this.pnlMiscellaneous_Category = new Digital Library.CustomPanelDashboard();
+            this.pnlMiscellaneous_Suppliers = new Digital Library.CustomPanelDashboard();
+            this.pnlMiscellaneous_TotalFine = new Digital Library.CustomPanelDashboard();
+            this.pnlMiscellaneous_Publishers = new Digital Library.CustomPanelDashboard();
+            this.pnlKeyInfo_Members = new Digital Library.CustomPanelDashboard();
             this.pnlBack_Main.SuspendLayout();
             this.pnlRight_Page1_Dashboard.SuspendLayout();
             this.pnlLeft_Main_2.SuspendLayout();

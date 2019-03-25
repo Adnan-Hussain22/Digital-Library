@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 
-namespace Advanced_School_Manangement_System.Details
+namespace Digital Library.Details
 {
     public partial class Fine_Payments : UserControl
     {

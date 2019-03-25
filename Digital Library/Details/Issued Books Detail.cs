@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Advanced_School_Manangement_System.Details
+namespace Digital Library.Details
 {
     public partial class Issued_Books_Detail : UserControl
     {

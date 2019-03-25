@@ -1,4 +1,4 @@
-﻿namespace Advanced_School_Manangement_System
+﻿namespace Digital Library
 {
     partial class FrmLibDashboard
     {
@@ -388,7 +388,7 @@
             this.toolstrpMenuFinePaymentDetail});
             this.MenuReports.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.MenuReports.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MenuReports.Image = global::Advanced_School_Manangement_System.Properties.Resources.progress_report;
+            this.MenuReports.Image = global::Digital Library.Properties.Resources.progress_report;
             this.MenuReports.Margin = new System.Windows.Forms.Padding(2, 30, 0, 0);
             this.MenuReports.Name = "MenuReports";
             this.MenuReports.Size = new System.Drawing.Size(126, 28);
@@ -470,7 +470,7 @@
             this.toolstrpMenuAddJournalMagazines});
             this.MenuPeriodicals.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.MenuPeriodicals.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MenuPeriodicals.Image = global::Advanced_School_Manangement_System.Properties.Resources.open_book;
+            this.MenuPeriodicals.Image = global::Digital Library.Properties.Resources.open_book;
             this.MenuPeriodicals.Margin = new System.Windows.Forms.Padding(5, 30, 0, 0);
             this.MenuPeriodicals.Name = "MenuPeriodicals";
             this.MenuPeriodicals.Size = new System.Drawing.Size(157, 28);

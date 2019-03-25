@@ -14,13 +14,13 @@ using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.Drawing;
 
-namespace Advanced_School_Manangement_System
+namespace Digital Library
 {
     public class Global
     {
         SqlCommand cmd;
-        public static string Caption = "Advance School Management System";
-        public static string CaptionLib = "Modern Library Management System";
+        public static string Caption = "Digital Library";
+        public static string CaptionLib = "Digital Library";
         public static bool check = false;
         public static object data = false;
         private byte[] _getimageinbytes;

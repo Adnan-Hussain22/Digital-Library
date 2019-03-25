@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_School_Manangement_System.Customization;
+using Digital Library.Customization;
 using System.Data.SqlClient;
-using Advanced_School_Manangement_System.Lib;
+using Digital Library.Lib;
 
-namespace Advanced_School_Manangement_System
+namespace Digital Library
 {
     public partial class Dashboard : Form
     {
