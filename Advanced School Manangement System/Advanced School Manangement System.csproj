@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A49A1D2F-F306-4DA5-9242-8603AC70D7D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Advanced_School_Manangement_System</RootNamespace>
+    <AssemblyName>Advanced School Manangement System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging">
+      <HintPath>C:\Users\ACS\Downloads\New folder\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>C:\Users\ACS\Downloads\New folder\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Magix\Encode and Decode QR Code\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Bunifu Cracked\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="ChreneLib">
+      <HintPath>C:\Users\ACS\Desktop\SourceCode\ChreneLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\..\..\..\Magix\Login With QR\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\Bunifu Cracked\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.CoreUtility.15.4.27004\lib\net45\Microsoft.VisualStudio.CoreUtility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.OLE.Interop.7.10.6070\lib\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.7.10.6071\lib\Microsoft.VisualStudio.Shell.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Text.Data.15.4.27004\lib\net45\Microsoft.VisualStudio.Text.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Logic, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Text.Logic.15.4.27004\lib\net45\Microsoft.VisualStudio.Text.Logic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Text.UI.15.4.27004\lib\net45\Microsoft.VisualStudio.Text.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Text.UI.Wpf.15.4.27004\lib\net45\Microsoft.VisualStudio.Text.UI.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.7.10.6070\lib\Microsoft.VisualStudio.TextManager.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.8.0.8.0.50727\lib\Microsoft.VisualStudio.TextManager.Interop.8.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\..\..\..\Magix\Login With QR\packages\ZXing.Net.0.16.4\lib\net45\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\..\..\..\Magix\Login With QR\packages\ZXing.Net.0.16.4\lib\net45\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Issuance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book Issuance.Designer.cs">
+      <DependentUpon>Book Issuance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\AdvancedCustomePanel_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customization\AdvancedCustomePanel_Dashboard.Designer.cs">
+      <DependentUpon>AdvancedCustomePanel_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\CustomeMenuStrip.cs" />
+    <Compile Include="AddMemberStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMemberStudent.Designer.cs">
+      <DependentUpon>AddMemberStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddBooks.Designer.cs">
+      <DependentUpon>AddBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customization\DGVPrinter.cs" />
+    <Compile Include="Customization\CustomPanel_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customization\CustomPanel_Dashboard.Designer.cs">
+      <DependentUpon>CustomPanel_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\FormAnimation.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Book Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Book Details.Designer.cs">
+      <DependentUpon>Book Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Fine Payments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Fine Payments.Designer.cs">
+      <DependentUpon>Fine Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Issued Books Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Issued Books Detail.Designer.cs">
+      <DependentUpon>Issued Books Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Librarian Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Librarian Details.Designer.cs">
+      <DependentUpon>Librarian Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Member Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Member Details.Designer.cs">
+      <DependentUpon>Member Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Publishers Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Publishers Detail.Designer.cs">
+      <DependentUpon>Publishers Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Return Books Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Return Books Detail.Designer.cs">
+      <DependentUpon>Return Books Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Suppliers Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Details\Suppliers Detail.Designer.cs">
+      <DependentUpon>Suppliers Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JournalMagazine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JournalMagazine.Designer.cs">
+      <DependentUpon>JournalMagazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\ActionDataEventArgs.cs" />
+    <Compile Include="Lib\Editor.cs" />
+    <Compile Include="Lib\Fine Payment.cs" />
+    <Compile Include="Lib\Journal And Magazine.cs" />
+    <Compile Include="Lib\Publisher.cs" />
+    <Compile Include="Lib\QR Generator.cs" />
+    <Compile Include="Lib\QR Scanner.cs" />
+    <Compile Include="Lib\Shelf.cs" />
+    <Compile Include="Lib\Supplier.cs" />
+    <Compile Include="Publisher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Publisher.Designer.cs">
+      <DependentUpon>Publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReturnBooks.Designer.cs">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Add Specific.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Add Specific.Designer.cs">
+      <DependentUpon>Add Specific.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\fines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\fines.Designer.cs">
+      <DependentUpon>fines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Librarian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Librarian.Designer.cs">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Member.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Publisher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Publisher.Designer.cs">
+      <DependentUpon>Publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\QR Container.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\QR Container.Designer.cs">
+      <DependentUpon>QR Container.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\QR Scanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\QR Scanner.Designer.cs">
+      <DependentUpon>QR Scanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Reusable Container.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Reusable Container.Designer.cs">
+      <DependentUpon>Reusable Container.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Select Multiple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Select Multiple.Designer.cs">
+      <DependentUpon>Select Multiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Shelf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Shelf.Designer.cs">
+      <DependentUpon>Shelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reuseables\Supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reuseables\Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Master Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Master Settings.Designer.cs">
+      <DependentUpon>Master Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Details.Designer.cs">
+      <DependentUpon>Student Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Details.Designer.cs">
+      <DependentUpon>Staff Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLibrarians.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageLibrarians.Designer.cs">
+      <DependentUpon>ManageLibrarians.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLibDashboard.Designer.cs">
+      <DependentUpon>FrmLibDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Lib\Book Entry.cs" />
+    <Compile Include="Lib\ReserveBookStaff.cs" />
+    <Compile Include="Lib\IssueBooks.cs" />
+    <Compile Include="Lib\MemberInfo.cs" />
+    <Compile Include="Lib\ReturnIssueBook.cs" />
+    <Compile Include="Lib\ReturnReserveBooks.cs" />
+    <Compile Include="Lib\Staff.cs" />
+    <Compile Include="Lib\Student.cs" />
+    <Compile Include="Lib\IssueBookMember.cs" />
+    <Compile Include="Supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Form Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Form Login.designer.cs">
+      <DependentUpon>Form Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Database Connection.cs" />
+    <Compile Include="Lib\User Info.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Main_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Main_Login.Designer.cs">
+      <DependentUpon>Main_Login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Issuance.resx">
+      <DependentUpon>Book Issuance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMemberStudent.resx">
+      <DependentUpon>AddMemberStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBooks.resx">
+      <DependentUpon>AddBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customization\AdvancedCustomePanel_Dashboard.resx">
+      <DependentUpon>AdvancedCustomePanel_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customization\CustomPanel_Dashboard.resx">
+      <DependentUpon>CustomPanel_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Book Details.resx">
+      <DependentUpon>Book Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Fine Payments.resx">
+      <DependentUpon>Fine Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Issued Books Detail.resx">
+      <DependentUpon>Issued Books Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Librarian Details.resx">
+      <DependentUpon>Librarian Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Member Details.resx">
+      <DependentUpon>Member Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Publishers Detail.resx">
+      <DependentUpon>Publishers Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Return Books Detail.resx">
+      <DependentUpon>Return Books Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\Suppliers Detail.resx">
+      <DependentUpon>Suppliers Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JournalMagazine.resx">
+      <DependentUpon>JournalMagazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Publisher.resx">
+      <DependentUpon>Publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBooks.resx">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Add Specific.resx">
+      <DependentUpon>Add Specific.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\fines.resx">
+      <DependentUpon>fines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Librarian.resx">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Publisher.resx">
+      <DependentUpon>Publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\QR Container.resx">
+      <DependentUpon>QR Container.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\QR Scanner.resx">
+      <DependentUpon>QR Scanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Reusable Container.resx">
+      <DependentUpon>Reusable Container.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Select Multiple.resx">
+      <DependentUpon>Select Multiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Shelf.resx">
+      <DependentUpon>Shelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reuseables\Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Master Settings.resx">
+      <DependentUpon>Master Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Details.resx">
+      <DependentUpon>Student Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Details.resx">
+      <DependentUpon>Staff Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLibrarians.resx">
+      <DependentUpon>ManageLibrarians.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibDashboard.resx">
+      <DependentUpon>FrmLibDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Form Login.resx">
+      <DependentUpon>Form Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Users\Main_Login.resx">
+      <DependentUpon>Main_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib\ModernLibraryManagementSystem\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ImageResources\photo-camera .png" />
+    <None Include="Resources\default-logo.png" />
+    <None Include="Resources\default-man.png" />
+    <None Include="Resources\book-default.png" />
+    <None Include="Resources\open-book.png" />
+    <None Include="Resources\progress-report.png" />
+    <None Include="Resources\photo-camera %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
